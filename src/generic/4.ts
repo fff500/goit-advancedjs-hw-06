@@ -10,11 +10,11 @@ interface ComponentInterface {
   props: ComponentPropsType
 }
 
-class Component implements ComponentInterface{
+class Component implements ComponentInterface {
   constructor (public props: ComponentPropsType) {}
 }
 
-class Page extends Component {
+class Page extends Component implements ComponentInterface {
   constructor(props: ComponentPropsType) {
     super(props)
   }
